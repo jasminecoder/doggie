@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: #333;
+  font-size: 1.125rem;
+}
+
+ul li {
+  line-height: 2.25em;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #666;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h1.title {
+  font-family: "Londrina Sketch", cursive;
+  font-size: 4.5rem;
+  color: rgb(241, 91, 4);
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    -4px 5px 4px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, -4px 5px 4px 5px rgba(0, 0, 0, 0);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  ul {
+    padding-left: 1em;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .hero-img {
+    padding-left: 3em;
+  }
+}
